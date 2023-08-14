@@ -1,13 +1,15 @@
 #include <iostream>
 using namespace std;
+//code to show array elements
 void showArray(int *arr, int size)
 {
     cout << "Elements of the array are...." << endl;
-    for (int i = 0; i < size; i++)
+    for (int i = 0; i < size; i++) 
     {
         cout << "arr[" << i << "] is :" << arr[i] << endl;
     }
 }
+//code to insert element
 void insertAt(int *arr, int &size, int position, int element)
 {
     size++;
@@ -17,6 +19,7 @@ void insertAt(int *arr, int &size, int position, int element)
     }
     arr[position - 1] = element;
 }
+//code to delete element from array
 void deleteFrom(int *arr, int position, int &size)
 {
     for (int i = position - 1; i <= size; i++)
@@ -25,6 +28,7 @@ void deleteFrom(int *arr, int position, int &size)
     }
     size--;
 }
+//code to sort array elements
 void sortArray(int *arr, int size)
 {
     for (int i = 0; i < size; i++)
@@ -40,6 +44,7 @@ void sortArray(int *arr, int size)
         }
     }
 }
+//code to insert in an sorted array
 void insertInSortedArray(int *arr, int &size, int element)
 {
     size++;
